@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
+
 #mapid { 
-    height: 700px;
-    Width: 99vw;
-    margin: auto;
+    height: 100vh;
+    Width: 100vw;
+    margin: 0;
     z-index: 0;
 }
 
@@ -10,8 +14,11 @@
     width: 40px;
     height: 40px;
     background-color: greenyellow;
+    text-align: center;
+    line-height: 35px;
+    color: white;
     margin: 0;
     top: 90px;
-    left: 25px;
+    left: 10px;
     z-index: 1;
 }

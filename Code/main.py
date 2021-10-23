@@ -3,6 +3,8 @@ import osmnx as ox
 
 def generate_edges(edges):
     f = open("edges.txt", 'w')
+    print(edges);
+
     for edge in edges.values:
         coords = edge[5].coords # 5 for custom | 6 for drive
         line = "["
@@ -22,4 +24,4 @@ G = ox.graph_from_place('Lipetsk, Russia', 'drive',
                             custom_filter='["highway"~"residential|tertiary|secondary|primary"]')
 nodes, edges = ox.graph_to_gdfs(G)
 generate_edges(edges)
-generate_nodes(nodes)
+#generate_nodes(nodes)

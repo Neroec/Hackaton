@@ -1,4 +1,17 @@
 #mapid { 
     height: 700px;
-    Width: 1000px;
+    Width: 99vw;
+    margin: auto;
+    z-index: 0;
+}
+
+#path {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    margin: 0;
+    top: 90px;
+    left: 25px;
+    z-index: 1;
 }
